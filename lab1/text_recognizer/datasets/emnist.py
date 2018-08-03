@@ -156,6 +156,7 @@ def _augment_emnist_mapping(mapping):
 
 if __name__ == '__main__':
     data = EmnistDataset()
+    print(PROCESSED_DATA_FILENAME)
     data.load_or_generate_data()
     print(data)
     print(data.x_train.shape, data.y_train.shape)
